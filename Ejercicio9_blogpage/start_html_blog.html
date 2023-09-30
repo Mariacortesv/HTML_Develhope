@@ -9,47 +9,87 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Lesson Blog Page</title>
     <style>
-      body { font-family: Arial, Helvetica, sans-serif;
+      body { 
+        text-shadow: 5px; color: white;
+        text-decoration: aliceblue;
+        margin-inline: 10px;
+        padding: 10px;
+        background-image: url(/Users/mariacortes/Documents/GitHub/HTML_Develhope/Ejercicio9_blogpage/laptop.png); 
+        background-blend-mode:overlay;
+        background-size: cover;
+
+       
+      }
+      article {
+        text-decoration: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
         text-align: justify;
         text-align: start;
-        margin-inline: 100px;
+text-shadow: 5px; color: white;
+
       }
+
       p {
-        text-align: left;
-        text-size-adjust: 0;
+        width: 400px;
+        height: 50px;
         
       }
-      div {
-padding: 10px;
+
+      ul li {
+        text-decoration: aliceblue;
+        text-shadow: 5px; color: white;
+        display: inline-block;
       }
+
+
+    footer {
+      text-decoration: aliceblue;
+      text-shadow: 5px; color: white;
+      display: inline-block;
+      width: 400px;
+      border: 1px solid rgb(200, 197, 203);
+    }
 
     </style>
   </head>
   <body>
     <div >
     <article>
+      <div class="bg-image"></div>
 <h1>Porque trabajar Remoto es lo mejor!</h1>
-<img src = "/Users/mariacortes/Documents/GitHub/HTML_Develhope/Ejercicio9_blogpage" alt ="manos en pc">
+<br>
+<h3>Te decimos 10 razones aqui!</h3>
 <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi 
-quis eligendi, iure soluta fuga id aut eos a harum incidunt. Quos
-ut accusantium voluptatibus perferendis illum laudantium, 
-blanditiis ducimus architecto.
-</p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi 
+  quis eligendi, iure soluta fuga id aut eos a harum incidunt. Quos
+  ut accusantium voluptatibus perferendis illum laudantium, 
+  blanditiis ducimus architecto.
+  </p>
+  <br>
     </article>
   </div>
   <div>
     <form>
       <h3>Complete to continue</h3>
-      <label for="form-email">Email <abbr title="required"></abbr> (Required)</label>
-      <input type="email" id="form-email" name="email" /><br>
+      <label for="form-email">Email<abbr title="required"></abbr>(Required)</label><br>
+      <input type="email" id="form-email" name="email" placeholder="email"/><br><br>
       <button type="submit">Submit</button>
     </form>
   </div>
-  <div>
+  <br><br>
+  <span>
     <footer>
-
+      <ul id="navega">
+        <li>
+          <h3><a href="#">Blog Home</a></h3>
+        </li>
+        <li>
+          <h5><a href="#">Derechos</a></h5>
+        </li>
+        <li>
+          <h5><a href="#">Mas</a></h5>
+        </li>
+  </span>
     </footer>
-  </div>
   </body>
 </html>
