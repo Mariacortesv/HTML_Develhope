@@ -7,7 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Document Validation</title>
     <style>
       label {
         display: block;
@@ -15,23 +15,26 @@
     </style>
   </head>
   <body>
+    <h3>Complete thefields to validate yout registration!</h3>
     <form action="#">
       <div>
-        <label for="form-email">Email</label>
+        <label for="form-email">Email <abbr title="required"></abbr> (Required)</label>
         <input type="email" id="form-email" name="email" />
-        <label for="form-pass">Password</label>
+        <label for="form-pass">Password <abbr title="required"></abbr> (Required)</label>
         <input type="password" id="form-pass" name="pass" />
       </div>
+      <br>
       <div>
-        <label for="form-name">Name and surname</label>
+        <label for="form-name">Name and surname <abbr title="required"></abbr> (Required)</label>
         <input type="text" id="form-name" name="name" />
-        <label for="form-dob">Date of birth</label>
+        <label for="form-dob">Date of birth <abbr title="required"></abbr> (Required)</label>
         <input type="date" id="form-dob" name="dob" />
-        <label for="form-tel">Phone number</label>
+        <label for="form-tel">Phone number <abbr title="required"></abbr> (Required)</label>
         <input type="tel" id="form-tel" name="tel" />
       </div>
+      <br>
       <div>
-        <label for="form-plan">Plans</label>
+        <label for="form-plan">Plans <abbr title="required"></abbr> (Required)</label>
         <select id="form-plan" name="plan">
           <option value="0">Free</option>
           <optgroup label="Monthly">
@@ -43,14 +46,15 @@
         <label for="form-pro">PRO plan</label>
         <input id="form-pro" name="pro" type="checkbox" />
       </div>
+      <br>
       <div>
-        <label for="form-cc">Credit card number</label>
-        <input id="form-cc" name="cc" type="text" />
-        <label for="form-cvc">CVC</label>
-        <input id="form-cvc" name="cvc" type="text" />
-        <label for="form-exp">Expiration date</label>
-        <input id="form-exp" name="exp" type="date" />
-        <label for="form-address">Address</label>
+        <label for="form-cc">Credit card number <abbr title="required"></abbr> (Required)</label>
+        <input id="form-cc" name="cc" type="tel"  maxlength="18"/><br>
+        <label for="form-cvc">CVC <abbr title="required"></abbr> (Required)</label>
+        <input id="form-cvc" name="cvc" type="text" maxlength="3" /><br>
+        <label for="form-exp">Expiration date <abbr title="required"></abbr> (Required)</label>
+        <input id="form-exp" name="exp" type="date" /><br>
+        <label for="form-address">Address <abbr title="required"></abbr> (Required)</label>
         <input type="text" id="form-address" name="address" />
       </div>
 
