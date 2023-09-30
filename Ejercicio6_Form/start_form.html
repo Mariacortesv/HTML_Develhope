@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson Form</title>
+    <style>
+      label {
+        display: block;
+      }
+      form {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Registration Form</h3>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" name="pwd" />
+
+      <br /><br />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="name" /><br />
+      <label for="lname">Last name:</label>
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="last name"
+      /><br /><br />
+
+      <label for="dateb"> Date of birth:</label>
+      <input type="date" id="dateb" name="dateb" />
+      <br /><br />
+      <label for="telnum">Telephone Number:</label>
+      <input type="tel" id="telnum" name="telname" />
+      <br /><br />
+
+      <label for="plans">Choose a plan:</label>
+      <select id="plans" name="plans">
+        <option value="Basic">Basic</option>
+        <option value="Medium">Medium</option>
+        <option value="Top">Top</option>
+      </select>
+      <br><br>
+  
+        <label for="proplan"> Pro Plan</label> 
+      <input type="checkbox" id="proplan" name="proplan" value="proplan" />
+   
+<br><br>
+      <label for="ccn">Credit Card Number:</label>
+      <input
+        id="ccn"
+        type="tel"
+        inputmode="numeric"
+        pattern="[0-9\s]{13,19}"
+        maxlength="19"
+        placeholder="xxxx xxxx xxxx xxxx"
+      />
+      <br /><br />
+      <label for="cvc">CVC:</label><br />
+      <input id="cvc" type="password" inputmode="numeric" maxlength="3" />
+      <br /><br />
+
+      <label for="expirationd"> Expiration Date:</label>
+      <input type="expirationd" id="expirationd" name="expirationd" />
+      <br /><br />
+
+      <label for="badd">Billing Address:</label>
+      <input type="badd" id="badd" name="badd" placeholder="Adress" /><br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
